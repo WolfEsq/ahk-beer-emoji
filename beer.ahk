@@ -7,7 +7,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; ----------
 
 ; Alright, now we can get to the good stuff.
-; Make a variable to hold the script's title. (This can be different than A_ScriptName, which is just a built-in variable for the script's filename.)
+; Make a variable to hold the script's title. (This can be different than A_ScriptName, 
+; which is just a built-in variable for the script's filename.)
 ; Use ":=" to assign a value to a variable.
 
 Script_Title := "Beer Script"
@@ -21,8 +22,10 @@ Menu, Tray, Tip, %Script_Title%
 
 
 ; Make the script icon a beer mug. 
-; A_ScriptDir is a built-in variable for the current script's directory (folder), so we'll use it look for the icon filepath relative to the script's folder.
-; It is always better to use a relative filepath. If you type out ("hard code") the whole filepath (C:\Users\WolfeN\Desktop\ahk\ico\beer.ico), 
+; A_ScriptDir is a built-in variable for the current script's directory (folder), 
+; so we'll use it look for the icon filepath relative to the script's folder.
+; It is always better to use a relative filepath. 
+; If you type out ("hard code") the whole filepath (C:\Users\UserName\Desktop\ahk\ico\beer.ico), 
 ; then you can't move the script to a different folder or computer without having to re-edit the script and change the filepath.
 
 Menu, Tray, Icon, %A_ScriptDir%\beer.ico
